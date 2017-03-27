@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8b0000</color>
+    <color name="colorPrimaryDark">#6f0000</color>
+    <color name="colorAccent">#E69C24</color>
+    <color name="FAB1">#334DAE</color>
+    <color name="FAB2">#cc0066</color>
+
+
+
+    <color name="black_overlay">#66000000</color>
+    <color name="gray">#474747</color>
+    <color name="darkGray">#333333</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="grid_bg">#000000</color>
+    <color name="grid_item_bg">#1a1b1d</color>
+    <color name="green">#198c19</color>
+    <color name="darkgreen">#0e3e0c</color>
+    <color name="violet">#a64ca6</color>
+    <color name="Orange">#ee7600</color>
+    <color name="Red">#ff0000</color>
+
+
+    <array name="rainbow">
+
+        <item>@color/Red</item>
+        <item>@color/Orange</item>
+        <item>@color/green</item>
+        <item>@color/violet</item>
+    </array>
+
+</resources>

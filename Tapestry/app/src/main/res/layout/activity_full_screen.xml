@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/coordinatorLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="io.wings.gabriel.tapestry.FullScreen">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray">
+
+
+        <fr.castorflex.android.circularprogressbar.CircularProgressBar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:indeterminate="true"
+            app:cpb_color="#FFee44"
+            app:cpb_colors="@array/rainbow"
+            app:cpb_rotation_speed="1.0"
+            app:cpb_sweep_speed="1.0"
+            app:cpb_stroke_width="4dp"
+            app:cpb_min_sweep_angle="10"
+            app:cpb_max_sweep_angle="300"
+            android:layout_centerInParent="true"
+            android:id="@+id/pbLoader"
+            android:progress="1"
+            />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/imgFullscreen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+
+        <LinearLayout
+            android:id="@+id/llSetWallpaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_rounded_corner"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_check_circle_white_24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="@string/set_wallpaper"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llDownloadWallpaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_rounded_corner"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ico_download" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="@string/download_wallpaper"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/llshare"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_rounded_corner"
+            >
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/menu_btn"
+                android:src="@drawable/ic_share_white_24dp"/>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

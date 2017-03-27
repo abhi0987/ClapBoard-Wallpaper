@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="io.wings.gabriel.tapestry.Setting"
+    tools:showIn="@layout/activity_setting"
+    android:background="@color/darkGray">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLEAR CACHE"
+        android:id="@+id/Clear_cache"
+        android:background="@drawable/btn_round_other"
+        android:layout_marginBottom="113dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="60dp"
+        android:id="@+id/grid_coloumns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        >
+
+        <EditText
+            android:backgroundTint="@color/white"
+            android:id="@+id/grid_coloumns_text"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textColorHint="@color/colorAccent"
+            android:hint="Number of GRID columns"/>
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:id="@+id/save"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_rounded_corner"
+        android:layout_below="@+id/grid_coloumns"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="83dp"
+        android:backgroundTint="@color/colorPrimary"/>
+</RelativeLayout>
